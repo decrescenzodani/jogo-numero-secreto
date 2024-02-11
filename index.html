@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <title>Jogo Número Secreto do Naruto</title>
+</head>
+
+<body>
+    <main id="main">
+        <section class="main-content">
+            <div id="texto" class="box-text">
+                <h2 class="title">Jogo do número secreto</h2>
+                <p id="txt-secondary" class="text-secondary">Escolha um número entre:</p>
+            </div>
+            <div class="inputs">
+                <select class="select-numbers">
+                    <option value="10">1 e 10</option>
+                    <option value="100">1 e 100</option>
+                    <option value="500">1 e 500</option>
+                    <option value="1000">1 e 1000</option>
+                    <option value="5000">1 e 5000</option>
+                    <option value="10000">1 e 10000</option>
+                </select>
+                <input class="input-numbers" type="number">
+
+                <div class="buttons">
+                    <button id="kick">Chutar</button>
+                    <button id="new-game">Novo Jogo</button>
+                </div>
+
+            </div>
+            <div id="div-img" class="div-imgs">
+                <div id="image" class="image-naruto" ></div>
+            </div>
+            <div id="div-modal">
+                <dialog id="modal">
+                    <div id="fechar-modal">
+                        <button id="btn-fechar-modal">x</button>
+                    </div>
+
+                    <div>
+                        <h2>Parabéns!</h2>
+                        <p>Você acertou o número secreto!</p>
+                        <p id="acertos-modal"></p>
+                        <button id="new-game-modal">Jogar novamente</button>
+                    </div>
+                </dialog>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
