@@ -15,6 +15,8 @@ console.log(selectNumbers.value)
 let rand = Number(selectNumbers.value)
 let tentativas = 0
 let randomKick = Math.floor((Math.random() * rand) + 1)
+// Math.floor me retorna o menor numero inteiro que ele encontrar dentro do numero
+// Math.random me retorna um numero aleatorio
 
 selectNumbers.addEventListener("change", function (e) {
     console.log(e.currentTarget.value)
